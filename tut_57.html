@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 14px;
+        background-color: red;
+        border: 2px solid black;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <!-- Browser Evets: 
+    click
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+    submit
+    focus
+    DOMontentLoaded
+    trasitionend -->
+    <div class="container">
+        <h1>This is my Heading</h1>
+        <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto veniam minima necessitatibus, fugiat, nostrum beatae dolore autem animi voluptatem non voluptatum dolores corrupti ex tempora velit est? Est, esse iure. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias suscipit eveniet aliquid debitis dolores delectus perferendis voluptatum error itaque. Ab quas facilis exercitationem obcaecati ut, voluptas nihil, odio voluptatum sint vel reprehenderit? Quod, neque. In natus ut illo ea ab? 
+        </p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            console.log('Mouse Inside');
+        });
+        para.addEventListener('mouseout', function run(){
+            console.dir('Mouse now went Outside');
+        });
+
+        function togglehide(){
+            // btn = document.getElementById('btn');
+            para = document.getElementById('para');
+            //new bowser can run with the id specified no need for above line 
+            if (para.style.display != 'none') {
+                para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

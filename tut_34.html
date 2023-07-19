@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box & Text Shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            padding: 23px 12px;
+            margin: 23px 12px;
+            background-color: burlywood;
+
+            /* box-shadow: offset-x offset-y color; */
+            /* box-shadow: 8px 8px green; */
+            /* box-shadow: -8px -8px green;  */
+            
+            /* box-shadow: offset-x offset-y blur-radius color; */
+            /* box-shadow: 8px 8px 4px green; */
+            /* box-shadow: -8px -8px 6px green; */
+
+            /* box-shadow: offset-x offset-y blur-radius spread-radius color; */
+            /* box-shadow: 8px  8px 6px 6px green; */
+            /* box-shadow: -8px -8px 6px 6px rgba(20, 195, 218, 0.5); */
+
+            box-shadow: inset 8px 8px green;
+            box-shadow: 8px 4px green, 4px 8px red;
+        }
+        .card h2{
+            /* text-shadow: 2px 1px rgb(87, 87, 87); */
+            text-shadow: 2px 1px 6px rgb(87, 87, 87);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">    
+        <div class="card" id="card1">
+            <h2>This is C++ Course</h2>
+            <p>I have started C++ course which does not mean that we will stop this course. We will continue this course to compelete.Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, eaque adipisci! Laboriosam expedita, excepturi iste optio sunt iure odio quia velit officia voluptate, obcaecati amet asperiores quidem inventore quas odit!</p>
+        </div>
+        <div class="card" id="card2">
+            <h2>This is HTML course</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus architecto, dolor tenetur nemo perspiciatis corporis eaque necessitatibus similique molestias dolorem autem veniam illo quas, labore beatae rem vel minus magnam!</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>This is Python Course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus temporibus quaerat doloremque, nesciunt provident aspernatur quos adipisci dolor atque recusandae mollitia, aperiam placeat error illo tempore quas, facere dicta consequatur?</p>
+        </div>
+    </div>
+</body>
+</html>

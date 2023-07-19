@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Quaries</title>
+    <style>
+        .box {
+            font-size: 72px;
+            text-align: center;
+            background-color: red;
+            color: white;
+            display: none;
+        }
+
+        @media only screen and (max-width:500px) {
+            #box1 {
+                display: block;
+                background-color: cyan;
+            }
+        }
+
+        @media only screen and (min-width:500px) and (max-width:1000px) {
+            #box2 {
+                display: block;
+                background-color: blueviolet;
+            }
+        }
+
+        @media only screen and (min-width:1000px) and (max-width:1400px) {
+            #box3 {
+                display: block;
+                color: black;
+                background-color: yellow;
+            }
+        }
+
+        @media only screen and (min-width:1400px) {
+            #box4 {
+                display: block;
+                color: black;
+                background-color: greenyellow;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">me ak android hu</div>
+    <div class="box" id="box2">mai ak tablet hu</div>
+    <div class="box" id="box3">mai ak laptop hu</div>
+    <div class="box" id="box4">mai ak computer hu</div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height, width, borders and backgrounds </title>
+    <style>
+        #firstpara {
+            background-color: red;
+            height: 100px;
+            width: 455px;
+            border: 8px double green;
+            /* border-width: 8px;
+            border-color: green;
+            border-style: double; */
+            border-radius: 8px;
+        }
+
+        #secondpara {
+            background-color: rgb(12, 246, 0);
+            height: 100px;
+            width: 455px;
+            border-top: 8px double violet;
+            border-right: 8px double rgb(17, 36, 249);
+            border-left: 8px double rgb(207, 210, 0);
+            border-bottom: 8px double rgb(19, 203, 235);
+            border-top-left-radius: 8px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 20px;
+        }
+
+        #thirdpara {
+            height: 500px;
+            width: 455px;
+            background-image: url('https://www.codewithharry.com/_next/image/?url=%2Fimg%2Flogo-blue.png&w=48&q=75');
+            border: 4px solid red;
+            background-repeat: no-repeat;
+            /*repeat-x and repeat-y will make it repeat on x and y axis  */
+            background-position: center center;
+            /* background-position: 192px 34px; */
+            /* background-position: top center; */
+            /* background-position: top right; */
+            /* background-position: centre left; */
+            /* background-position: bottom left; */
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>This is heading </h1>
+    <p id="firstpara">Thsi is a paragraph</p>
+
+    <h1>This is second heading </h1>
+    <p id="secondpara">This is my second paragraph</p>
+
+    <h1>This is third heading </h1>
+    <p id="thirdpara">This is my third paragraph</p>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+    <script>
+        console.log("This is Tutorial 55");
+        let i=0;
+        for(i=0;i<3;i++){
+            console.log(i);
+        }
+
+        //array
+        let friend = ["Chitrarth", "Shivam", "Lokendra", "Ravinder"];
+        //use this loop to ittrate over array in javascript
+        for (let j = 0; j < friend.length; j++) {
+            console.log("Hello Friend, " + friend[j]);
+        }
+        //foreach loop
+        console.log("\nAnother Method To print array\n\n");
+        friend.forEach(function f(element){
+            console.log("Hello Friend, " + element + " to morden JavaScript");
+        });
+        //using element method to ittrate
+        console.log("\nAnother Method To print array\n\n");
+        for(element of friend){
+            console.log("Hello Friend, " + element + " to morden JavaScript again");
+        }
+
+        //object in javascript
+        let employee = {
+            name : "Chitrarth Rai",
+            salary : 10,
+            channel : "CodeWithChitrarth",
+        }
+        //using loop to ittrate over obejct in javascript
+        for(key in employee){
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+        
+        // While loop in js
+        let k=0;
+        while(k<4){
+            console.log(`${k} is less than 4`);
+            k++;
+        }
+        //do while loop in js
+        //it always runs one time without checking the condition
+        let j=5;
+        console.log("\n");
+        do{
+            j++;
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+        }while(j<4);
+
+    </script>
+</body>
+</html>

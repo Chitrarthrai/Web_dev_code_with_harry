@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays & Objects</title>
+</head>
+<body>
+    <div class="container">
+        Simple Webpage
+    </div>
+    <script>
+        let myVar1 = 34; 
+        let myVar2 = 'String';
+        let myVar3 = true; //bollean
+        let myVar4 = null;
+        let myVar5 = undefined;
+        // let var; //it has undefined value
+
+        //onject 
+        let employee = {
+            name : "Chitrarth Rai",
+            salary : 10 ,
+            channel : "CodeWithChitrarth",
+            channel2 : "ProgrammingWithChitrarth",
+            "channel 3" : "ChitrarthCoding"
+        }
+        console.log(employee);
+        console.log(employee.channel);
+        console.log(employee['channel2']);
+        console.log(employee['channel 3']);
+        // console.log(employee.channe 3); //error 
+
+        //array
+        let names = [9,1,2,"Chitrarth",undefined]; //can take different data types as input
+        // let names = new Array[1,2,"Chitrarth",undefined]; //another way defining arrray
+        console.log(names); //print whole array
+        console.log(names[0]); //print data at array[0]
+        console.log(names.length); //prints length of array
+        names = names.sort(); //sort the array in ascending order
+        names.push("This is pushed"); //to add new element at last of array
+
+        let arr = new Array(20); //creates an array of size 20 undefined
+        
+    </script>
+</body>
+</html>

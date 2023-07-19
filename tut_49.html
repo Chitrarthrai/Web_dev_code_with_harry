@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js | String and Sring Method </title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is heading</h1>
+
+        <div id="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex deserunt quae suscipit placeat eius quia totam? Error omnis deserunt, nobis magni natus, maiores officiis iste rem libero laboriosam temporibus. Vero quisquam exercitationem architecto quis ipsum cum sed voluptas perspiciatis at corporis sequi laborum nostrum, nulla consequatur numquam ad atque reiciendis beatae porro asperiores quod tenetur. Harum, laboriosam aperiam incidunt architecto nobis tempora in explicabo sunt minus nemo?</p>
+        </div>
+    </div>
+    <script>
+        // var string = "this";
+        // var string = 'this';
+        var string = 'thi"s'; //no error
+        // var string = 'thi's'; error
+        // var string = "thi's"; no error
+        var name = "Chitrarth";
+        var message = 'Chitrarth is a good boy';
+        var channel= "CodeWithChitrarth";
+        var temp = `${name} is a 'nice' person and he has a "channel" called ${channel}`;
+        console.log(string + name + message);
+        console.log(temp);
+        var len = name.length;
+        console.log(`Length of name is ${len}`);
+
+        console.log("Hello World\nChitrarth\tand");
+
+        var y = new String("This");
+        console.log(y);
+
+        document.getElementById('content').innerHTML = '<h3>This is an h3 heading</h3';
+    </script>
+</body>
+</html>
